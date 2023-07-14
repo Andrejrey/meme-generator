@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import ImageGenerator from "./components/ImageGenerator";
 import NavBar from "./components/NavBar";
+import MemeGenerator from "./components/MemeGenerator";
 
 function App() {
   const [memes, setMemes] = useState(null);
@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <ImageGenerator memes={memes} />
+      <MemeGenerator memes={memes} />
     </>
   );
 }

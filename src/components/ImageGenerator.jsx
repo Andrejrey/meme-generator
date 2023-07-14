@@ -3,8 +3,8 @@ import TextGenerator from "./TextGenerator";
 
 const ImageGenerator = ({ memes }) => {
   const [index, setIndex] = useState(1);
-  const [textOne, setTextOne] = useState("");
-  const [textTwo, setTextTwo] = useState("");
+  const [textOne, setTextOne] = useState("Sein oder Nichtsein");
+  const [textTwo, setTextTwo] = useState("das ist hier die frage");
 
   function back() {
     setIndex(index - 1);

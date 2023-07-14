@@ -26,3 +26,14 @@ nav {
 #span-generator {
   color: yellow;
 }
+
+.image-genetaror-container {
+  display: flex;
+  justify-content: center;
+  background-color: #333333;
+  margin: 5rem;
+}
+
+.image-genetaror-container img {
+  padding: 5rem;
+}

@@ -5,11 +5,10 @@ import NavBar from "./components/NavBar";
 
 function App() {
   const [memes, setMemes] = useState(null);
-  console.log(memes);
 
   useEffect(() => {
-    axios.get("https://api.imgflip.com/get_memes").then((response) => {
-      setMemes(response.data);
+    axios.get("https://api.imgflip.com/get_memes").then(({ data }) => {
+      setMemes(data.data.memes);
     });
   }, []);
 

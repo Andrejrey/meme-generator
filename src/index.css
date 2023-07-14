@@ -22,18 +22,69 @@ nav {
   font-weight: bold;
   color: white;
 }
+.upload {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
 
 #span-generator {
   color: yellow;
 }
 
 .image-genetaror-container {
-  display: flex;
-  justify-content: center;
   background-color: #333333;
   margin: 5rem;
 }
 
 .image-genetaror-container img {
   padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+}
+
+.image-container img {
+  height: 1000px;
+  width: 1000px;
+}
+
+.upper-p {
+  position: absolute;
+  top: 110px;
+  left: 48%;
+  font-size: 36px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.lower-p {
+  position: absolute;
+  bottom: 130px;
+  left: 48%;
+  font-size: 36px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#next-button {
+  margin-left: 30px;
+}
+
+button {
+  background-color: yellow;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }

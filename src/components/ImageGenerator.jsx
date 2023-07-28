@@ -39,17 +39,19 @@ const ImageGenerator = ({ memes }) => {
     <>
       <div className="image-genetaror-container">
         {memes && (
-          <div ref={memeRef} className="image-container" key={index}>
-            <img src={memes[index].url} alt="" />
-            {memes && memes[index].box_count > 0 && (
-              <p className="upper-p">{textOne}</p>
-            )}
-            {memes && memes[index].box_count > 1 && (
-              <p className="middle-p">{textTwo}</p>
-            )}
-            {memes && memes[index].box_count > 2 && (
-              <p className="lower-p">{textThree}</p>
-            )}
+          <div className="image-container" key={index}>
+            <div ref={memeRef}>
+              <img src={memes[index].url} alt="" />
+              {memes && memes[index].box_count > 0 && (
+                <p className="upper-p">{textOne}</p>
+              )}
+              {memes && memes[index].box_count > 1 && (
+                <p className="middle-p">{textTwo}</p>
+              )}
+              {memes && memes[index].box_count > 2 && (
+                <p className="lower-p">{textThree}</p>
+              )}
+            </div>
             <div>
               <button disabled={index < 1} onClick={back}>
                 Back

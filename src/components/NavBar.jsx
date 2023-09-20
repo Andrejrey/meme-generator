@@ -6,7 +6,7 @@ const NavBar = () => {
           MEME <span id="span-generator">GENERATOR</span>
         </p>
       </div>
-      <p className="upload">Upload</p>
+      {/* <p className="upload">Upload</p> */}
     </nav>
   );
 };

@@ -1,5 +1,6 @@
 import { useState, createRef } from "react";
 import { exportComponentAsJPEG } from "react-component-export-image";
+import Draggable from "react-draggable";
 
 const ImageGenerator = ({ memes }) => {
   console.log(memes && memes[1].box_count);
@@ -43,13 +44,19 @@ const ImageGenerator = ({ memes }) => {
             <div ref={memeRef}>
               <img src={memes[index].url} alt="" />
               {memes && memes[index].box_count > 0 && (
-                <p className="upper-p">{textOne}</p>
+                <Draggable>
+                  <p className="upper-p">{textOne}</p>
+                </Draggable>
               )}
               {memes && memes[index].box_count > 1 && (
-                <p className="middle-p">{textTwo}</p>
+                <Draggable>
+                  <p className="middle-p">{textTwo}</p>
+                </Draggable>
               )}
               {memes && memes[index].box_count > 2 && (
-                <p className="lower-p">{textThree}</p>
+                <Draggable>
+                  <p className="lower-p">{textThree}</p>
+                </Draggable>
               )}
             </div>
             <div>
@@ -91,7 +98,7 @@ const ImageGenerator = ({ memes }) => {
             <input
               onChange={onChangeTextThree}
               type="text"
-              placeholder="write your second text"
+              placeholder="write your third text"
             />
           )}
         </form>

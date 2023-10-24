@@ -1,5 +1,4 @@
 import ImageGenerator from "./ImageGenerator";
-import TextGenerator from "./TextGenerator";
 
 const MemeGenerator = ({ memes }) => {
   return (

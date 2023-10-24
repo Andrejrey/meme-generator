@@ -77,6 +77,7 @@ nav {
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
     2px 2px 0 #000;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .middle-p {
@@ -90,6 +91,7 @@ nav {
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
     2px 2px 0 #000;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .lower-p {
